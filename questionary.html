@@ -4,10 +4,45 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cuestionario Karla</title>
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
+    <header>
+        <img src="./imgs/logo.png" alt="FrikiManía" width="200"></a>
+        <ul>
+            <li><a href = "main.html">Presentación</a></li>
+            <li><a href = "list.html">Catálogo</a></li>        
+            <li><a href = "questionary.html">Cuestionario</a></li>
+        </ul>
+        <nav id="buscar">
+            <input type="search" name="search" placeholder="Buscar"/>
+        </nav>
+        <br>
+    </header>
+    <section>
+        <p> En FrikiManía te ofrecemos un pequeño cuestionario para saber qué productos podemos añadir. </p>
+        <p> Complétalo y... ¿Quién sabe? Quizás traigamos los productos el mes que viene. </p>
+    </section>
     <form>
-        
+        <label for="nombre">Nombre completo:</label><br>
+        <input type="text" id="nombre" name="nombre"><br><br>
+
+        <label for="dni">DNI:</label><br>
+        <input type="text" id="dni" name="dni"><br><br>
+
+        <label for="correo">Correo electrónico:</label><br>
+        <input type="text" id="correo" name="correo"><br><br>
+
+        <label for="productos">Productos deseados:</label><br>
+        <textarea id="text" name="productos" rows="5" cols="30"></textarea><br><br>
+
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Borrar">
     </form>
+    <footer>
+        &copy; 2025 FRIKIMANÍA - Todos los derechos reservados a Karla
+        <br><br>
+        Síguenos en: Instagram | Twitter | Facebook
+    </footer>
 </body>
 </html>
